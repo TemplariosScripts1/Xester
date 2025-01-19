@@ -1,18 +1,16 @@
--- Criar a GUI principal
 local screenGui = Instance.new("ScreenGui")
 screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
--- Criar o botão
 local button = Instance.new("TextButton")
 button.Parent = screenGui
-button.Size = UDim2.new(0, 100, 0, 50) -- Tamanho do botão
-button.Position = UDim2.new(0, 10, 0.5, -25) -- Posição no lado esquerdo e centralizado verticalmente
-button.Text = "Xester"
-button.BackgroundTransparency = 0.5 -- Transparência do botão
-button.BackgroundColor3 = Color3.new(0, 0, 0) -- Cor de fundo (preto)
-button.TextColor3 = Color3.new(1, 1, 1) -- Cor do texto (branco)
+button.Size = UDim2.new(0, 100, 0, 50)
 
--- Adicionar a funcionalidade ao clicar
+button.Position = UDim2.new(0, 10, 0.5, -25)
+button.Text = "Xester"
+button.BackgroundTransparency = 0.5
+button.BackgroundColor3 = Color3.new(0, 0, 0) -- Cor de fundo (preto)
+button.TextColor3 = Color3.new(1, 1, 1)
+
 button.MouseButton1Click:Connect(function()
 Player = game:GetService("Players").LocalPlayer
 PlayerGui = Player.PlayerGui
